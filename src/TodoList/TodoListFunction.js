@@ -9,6 +9,22 @@ export default function TodoListFunction() {
   };
 
   const addHandler = () => {
+    // 优化：
+    // 不能输入为空
+    if (!input.trim().length) {
+      alert("there no empty value allowed");
+      return;
+    }
+
+    // 不能重复list,不区分大小写
+    let existLength = list.filter(
+      (item) => item.value.toUpperCase() === input.toUpperCase()
+    ).length;
+    if (existLength) {
+      alert("exist todo");
+      return;
+    }
+
     const newItem = {
       id: new Date(),
       value: input
