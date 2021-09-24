@@ -6,6 +6,7 @@ import TodoListFunction from "./TodoList/TodoListFunction";
 import AutoComplete from "./AutoComplete/AutoComplete";
 
 import BlinkWrapper from "./BlinkyWrapper/BlinkyWrapper";
+import Timer from "./Timer/Timer";
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
       {/* <TodoListFunction /> */}
 
       {/* <AutoComplete /> */}
-      <BlinkWrapper />
+      {/* <BlinkWrapper /> */}
+      <Timer />
     </div>
   );
 }
