@@ -7,6 +7,8 @@ import AutoComplete from "./AutoComplete/AutoComplete";
 
 import BlinkWrapper from "./BlinkyWrapper/BlinkyWrapper";
 import Timer from "./Timer/Timer";
+import Card from "./Card/Card";
+import CommentTree from "./CommentTree/CommentTree";
 
 export default function App() {
   return (
@@ -16,7 +18,10 @@ export default function App() {
 
       {/* <AutoComplete /> */}
       {/* <BlinkWrapper /> */}
-      <Timer />
+      {/* <Timer /> */}
+      {/* <Card/> */}
+
+      <CommentTree />
     </div>
   );
 }
