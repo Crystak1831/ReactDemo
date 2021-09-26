@@ -19,9 +19,9 @@ export default function App() {
       {/* <AutoComplete /> */}
       {/* <BlinkWrapper /> */}
       {/* <Timer /> */}
-      {/* <Card/> */}
+      <Card />
 
-      <CommentTree />
+      {/* <CommentTree /> */}
     </div>
   );
 }

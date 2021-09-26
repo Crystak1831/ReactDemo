@@ -32,10 +32,6 @@ export default function Card() {
     setCombo(array);
   }, []);
 
-  const shuffleHandle = () => {
-    setCurrent([]);
-  };
-
   const getNewCard = () => {
     let array = combo;
     // console.log(array)
@@ -46,6 +42,17 @@ export default function Card() {
       array.splice(index, 1);
     }
     setCurrent(currentCard);
+    setCombo(array);
+  };
+
+  const shuffleHandle = () => {
+    let array = [];
+    for (let i = 0; i < ranks.length; i++) {
+      for (let j = 0; j < suits.length; j++) {
+        array.push(ranks[i] + suits[j]);
+      }
+    }
+    setCurrent([]);
     setCombo(array);
   };
 
