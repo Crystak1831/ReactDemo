@@ -9,6 +9,7 @@ import BlinkWrapper from "./BlinkyWrapper/BlinkyWrapper";
 import Timer from "./Timer/Timer";
 import Card from "./Card/Card";
 import CommentTree from "./CommentTree/CommentTree";
+import ImgComponent from "./changeImg/changeImg";
 
 export default function App() {
   return (
@@ -19,9 +20,11 @@ export default function App() {
       {/* <AutoComplete /> */}
       {/* <BlinkWrapper /> */}
       {/* <Timer /> */}
-      <Card />
+      {/* <Card /> */}
 
       {/* <CommentTree /> */}
+
+      <ImgComponent />
     </div>
   );
 }
