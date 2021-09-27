@@ -1,0 +1,144 @@
+{
+  "content": [
+    {
+      "id": "0",
+      "content": [
+        {
+          "id": "0",
+          "text": "Income",
+          "type": "title",
+          "styles": {
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "color": "#3a3f47"
+          }
+        },
+        {
+          "id": "1",
+          "text": "$78k",
+          "type": "value",
+          "styles": {
+            "fontSize": "18px",
+            "fontWeight": "bold",
+            "color": "#2aa868"
+          }
+        },
+        {
+          "id": "2",
+          "text": "TAX REPORTED",
+          "type": "subTitle",
+          "styles": {
+            "fontSize": "14px",
+            "fontWeight": "normal",
+            "color": "#8d9096"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "content": [
+        {
+          "id": "4",
+          "text": "Credit Score",
+          "type": "title",
+          "styles": {
+            "fontSize": "16px",
+            "fontWeight": "medium",
+            "color": "#3a3f47"
+          }
+        },
+        {
+          "id": "5",
+          "text": "700",
+          "type": "value",
+          "styles": {
+            "fontSize": "18px",
+            "fontWeight": "bold",
+            "color": "#ffac61"
+          }
+        },
+        {
+          "id": "6",
+          "text": "GOOD",
+          "type": "subTitle",
+          "styles": {
+            "fontSize": "14px",
+            "fontWeight": "normal",
+            "color": "#ffac61"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "content": [
+        {
+          "id": "7",
+          "text": "Debt to Income",
+          "type": "title",
+          "styles": {
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "color": "#3a3f47"
+          }
+        },
+        {
+          "id": "8",
+          "text": "15%",
+          "type": "value",
+          "styles": {
+            "fontSize": "18px",
+            "fontWeight": "bold",
+            "color": "#2aa868"
+          }
+        },
+        {
+          "id": "9",
+          "text": "GOOD",
+          "type": "subTitle",
+          "styles": {
+            "fontSize": "14px",
+            "fontWeight": "normal",
+            "color": "#2aa868"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": [
+        {
+          "id": "10",
+          "text": "Total Debt",
+          "type": "title",
+          "styles": {
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "color": "#3a3f47"
+          }
+        },
+        {
+          "id": "11",
+          "text": "$18 k",
+          "type": "value",
+          "styles": {
+            "fontSize": "18px",
+            "fontWeight": "bold",
+            "color": "red"
+          }
+        },
+        {
+          "id": "12",
+          "text": "CREDITS & LOANS",
+          "type": "subTitle",
+          "styles": {
+            "fontSize": "14px",
+            "fontWeight": "normal",
+            "color": "#8d9096"
+          }
+        }
+      ]
+    }
+  ]
+}

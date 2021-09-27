@@ -1,0 +1,24 @@
+{
+  "content": [
+    {
+      "id": "0",
+      "title": "Income",
+      "body": "Your best financial life starts with knowing your income and expenses. If you’ve filed with TurboTax and given consent, Turbo will include your verified income, helping you get more accurate advice and estimates."
+    },
+    {
+      "id": "1",
+      "title": "Credit Score",
+      "body": "Your credit score helps lenders understand how well you manage different forms of credit, like loans, credit cards, and mortgages. We can show you how you could improve your score to get access to better rates and more money."
+    },
+    {
+      "id": "2",
+      "title": "Debt to Income",
+      "body": "Your credit score is only part of the picture. You can learn if you’re really living within your means with your debt-to-income ratio, or DTI. We show you how healthy your DTI is, and how you could make it even better."
+    },
+    {
+      "id": "3",
+      "title": "Total Debt",
+      "body": "Whether you want to improve your credit score, pay down debt, or make an important purchase, Turbo can give you the tools and info you need to truly understand your financial situation, and to move forward with confidence."
+    }
+  ]
+}
