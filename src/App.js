@@ -11,6 +11,7 @@ import Card from "./Card/Card";
 import CommentTree from "./CommentTree/CommentTree";
 import ImgComponent from "./changeImg/changeImg";
 import LoginPage from "./UserLogin/UserLogin";
+import SortTable from "./SortTable/SortTable";
 
 export default function App() {
   return (
@@ -26,7 +27,8 @@ export default function App() {
       {/* <CommentTree /> */}
 
       {/* <ImgComponent /> */}
-      <LoginPage />
+      {/* <LoginPage /> */}
+      <SortTable />
     </div>
   );
 }
