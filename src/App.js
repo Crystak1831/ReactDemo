@@ -12,6 +12,7 @@ import CommentTree from "./CommentTree/CommentTree";
 import ImgComponent from "./changeImg/changeImg";
 import LoginPage from "./UserLogin/UserLogin";
 import SortTable from "./SortTable/SortTable";
+import RevertTree from "./RevertTree/RevertTree";
 
 export default function App() {
   return (
@@ -22,13 +23,14 @@ export default function App() {
       {/* <AutoComplete /> */}
       {/* <BlinkWrapper /> */}
       {/* <Timer /> */}
-      <Card />
+      {/* <Card /> */}
 
       {/* <CommentTree /> */}
 
       {/* <ImgComponent /> */}
       {/* <LoginPage /> */}
       {/* <SortTable /> */}
+      <RevertTree />
     </div>
   );
 }
