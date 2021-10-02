@@ -22,45 +22,67 @@ export default function ReverseTree() {
     ]
   };
 
-  // const initialData = (data,index) =>{
-  //   if(data.children){
-  //     data.children.forEach((item) =>{
-  //       initialData(item)
-  //     })
-  //   }
-  // }
-  // initialData(data,0)
+  const [open, setOpen] = useState(false);
+  const [rootData, setRootData] = useState("");
+  const init = (data, index) => {
+    data.id = index ? index + "" : "";
+    if (data.children) {
+      data.children.forEach((item, index) => {
+        init(item, data.id + index);
+      });
+    }
+  };
+  init(data, 0);
+
+  const handleData = (e) => {
+    const id = e.target.id;
+    console.log(id);
+    if (id !== undefined) {
+      let newData = id.split("").reduce((prev, curr) => {
+        return prev.children[curr];
+      }, data);
+      setRootData(newData);
+      setOpen(!open);
+    }
+  };
 
   return (
-    <div>
-      <Tree data={data} />
+    <div data-id={data.id}>
+      <span onClick={handleData}>{open ? "-" : "+"}</span>
+      {/* {data.val} */}
+      {data.val}
+      <Tree rootData={rootData} />
     </div>
   );
 }
 
-const Tree = ({ data }) => {
+const Tree = ({ rootData }) => {
+  // console.log(rootData)
+  const [open, setOpen] = useState(false);
+  const handleData = () => {
+    setOpen(!open);
+  };
   return (
     <ul>
-      {data.children &&
-        data.children.map((item, index) => {
+      {rootData &&
+        rootData.children.map((item, index) => {
+          // console.log(item)
           return (
-            <li key={index}>
+            <div key={index}>
+              <span onClick={handleData}>{open ? "-" : "+"}</span>
               {item.val}
 
               {
-                console.log(item.children)
-                // item.children && <Tree data={item.children} />
+                // console.log(item.children)
+                item.children && <Tree data={item.children} />
               }
-            </li>
+            </div>
           );
-          //   if(item.children){
-          //     return <div key={index}>
-          //        <Tree data = {item.children}/>
-          //     </div>
-          //   }else{
-          //     ""
-          //   }
         })}
+      {/* {rootData&&rootData.children.map((item)=>{
+          // console.log(item.children)
+          return <Node nodeData={item.children}/>
+        })} */}
     </ul>
   );
 };
