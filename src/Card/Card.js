@@ -23,6 +23,10 @@ export default function Card() {
   const [current, setCurrent] = useState([]);
 
   useEffect(() => {
+    buildDecker();
+  }, []);
+
+  const buildDecker = () => {
     let array = [];
     for (let i = 0; i < ranks.length; i++) {
       for (let j = 0; j < suits.length; j++) {
@@ -30,7 +34,7 @@ export default function Card() {
       }
     }
     setCombo(array);
-  }, []);
+  };
 
   const getNewCard = () => {
     let array = combo;
@@ -46,14 +50,15 @@ export default function Card() {
   };
 
   const shuffleHandle = () => {
-    let array = [];
-    for (let i = 0; i < ranks.length; i++) {
-      for (let j = 0; j < suits.length; j++) {
-        array.push(ranks[i] + suits[j]);
-      }
-    }
+    // let array = [];
+    // for (let i = 0; i < ranks.length; i++) {
+    //   for (let j = 0; j < suits.length; j++) {
+    //     array.push(ranks[i] + suits[j]);
+    //   }
+    // }
+    buildDecker();
     setCurrent([]);
-    setCombo(array);
+    // setCombo(array);
   };
 
   return (
@@ -61,8 +66,8 @@ export default function Card() {
       <button onClick={getNewCard}>new hand of card</button>
       <button onClick={shuffleHandle}>shuffle</button>
       <div className="card-container">
-        {current.map((item) => {
-          return <div key={item}>{item}</div>;
+        {current.map((item, index) => {
+          return <div key={index}>{item}</div>;
         })}
       </div>
     </div>

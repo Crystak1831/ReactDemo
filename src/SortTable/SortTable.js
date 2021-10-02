@@ -20,8 +20,8 @@ export default function SortTable() {
     });
   };
 
-  const [dataList, setData] = useState(initialData());
-  // const [isChecked,setCheck] = useState(false)
+  let [dataList, setData] = useState(initialData());
+  // const [isChecked, setCheck] = useState(false);
 
   const sortDown = () => {
     dataList.sort((e1, e2) => {

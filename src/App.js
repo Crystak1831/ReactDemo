@@ -22,13 +22,13 @@ export default function App() {
       {/* <AutoComplete /> */}
       {/* <BlinkWrapper /> */}
       {/* <Timer /> */}
-      {/* <Card /> */}
+      <Card />
 
       {/* <CommentTree /> */}
 
       {/* <ImgComponent /> */}
       {/* <LoginPage /> */}
-      <SortTable />
+      {/* <SortTable /> */}
     </div>
   );
 }
