@@ -48,8 +48,8 @@ const Tree = ({ data }) => {
               {item.val}
 
               {
-                //  console.log(item.children)
-                item.children && <Tree data={item.children} />
+                console.log(item.children)
+                // item.children && <Tree data={item.children} />
               }
             </li>
           );
