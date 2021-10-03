@@ -1,5 +1,6 @@
-import "./styles.css";
+// import "./styles.css";
 import React, { useState } from "react";
+import "./Comment.css";
 
 const mockup = [
   { date: "2020-02-10", cnt: "3" },
@@ -18,7 +19,7 @@ const mockup = [
   { date: "2020-02-23", cnt: "5" }
 ];
 
-export default function App() {
+export default function Comment() {
   const [data, setData] = useState([...mockup]);
   return (
     <div className="App">

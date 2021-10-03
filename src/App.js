@@ -15,6 +15,7 @@ import SortTable from "./SortTable/SortTable";
 import RevertTree from "./RevertTree/RevertTree";
 import Navigation from "./Navigation/Navigation";
 import EnterUserDetail from "./EnterUserDetail/EnterUserDetail";
+import Comment from "./Comment/Comment";
 
 export default function App() {
   return (
@@ -33,8 +34,9 @@ export default function App() {
       {/* <LoginPage /> */}
       {/* <SortTable /> */}
       {/* <RevertTree /> */}
-      <Navigation />
+      {/* <Navigation /> */}
       {/* <EnterUserDetail/> */}
+      <Comment />
     </div>
   );
 }
