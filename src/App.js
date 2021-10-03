@@ -3,6 +3,7 @@ import "./styles.css";
 // TodoList:
 import TodoListClass from "./TodoList/TosoListClass";
 import TodoListFunction from "./TodoList/TodoListFunction";
+import Todo from "./TodoList/TodoListEditFun";
 import AutoComplete from "./AutoComplete/AutoComplete";
 
 import BlinkWrapper from "./BlinkyWrapper/BlinkyWrapper";
@@ -35,12 +36,13 @@ export default function App() {
       {/* <ImgComponent /> */}
       {/* <LoginPage /> */}
       {/* <SortTable /> */}
-      <RevertTree />
+      {/* <RevertTree /> */}
       {/* <Navigation /> */}
       {/* <EnterUserDetail/> */}
       {/* <Comment /> */}
       {/* <SampleCourse/> */}
       {/* <TreeView /> */}
+      <Todo />
     </div>
   );
 }
