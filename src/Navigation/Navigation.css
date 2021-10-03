@@ -1,0 +1,41 @@
+.Navigation {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+header {
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: white;
+}
+.detail-card {
+  background-color: #c0ebff;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: #c0ebff;
+}
+.nav-item {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.show {
+  opacity: 1;
+}
+.hidden {
+  opacity: 0;
+}

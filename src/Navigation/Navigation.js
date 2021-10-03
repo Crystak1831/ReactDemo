@@ -1,14 +1,15 @@
 import React from "react";
-import "./styles.css";
-import data1 from "/public/data1.json";
-import data from "/public/data.json";
-export default class App extends React.Component {
+import "./Navigation.css";
+import data1 from "./data1.json";
+import data from "./data.json";
+export default class Navigation extends React.Component {
   state = {
     navItem: [],
     subItem: []
   };
 
   componentDidMount() {
+    //deep copy
     let tempData = JSON.parse(JSON.stringify(data1));
     let temp = [...this.state.navItem, ...tempData.content];
     this.setState({
@@ -29,7 +30,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="Navigation">
         <header>Navigation</header>
         <section className="nav-item">
           {this.state.navItem &&

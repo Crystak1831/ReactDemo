@@ -13,6 +13,8 @@ import ImgComponent from "./changeImg/changeImg";
 import LoginPage from "./UserLogin/UserLogin";
 import SortTable from "./SortTable/SortTable";
 import RevertTree from "./RevertTree/RevertTree";
+import Navigation from "./Navigation/Navigation";
+import EnterUserDetail from "./EnterUserDetail/EnterUserDetail";
 
 export default function App() {
   return (
@@ -30,7 +32,9 @@ export default function App() {
       {/* <ImgComponent /> */}
       {/* <LoginPage /> */}
       {/* <SortTable /> */}
-      <RevertTree />
+      {/* <RevertTree /> */}
+      <Navigation />
+      {/* <EnterUserDetail/> */}
     </div>
   );
 }
