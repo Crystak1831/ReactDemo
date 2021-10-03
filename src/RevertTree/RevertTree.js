@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./RevertTree.css";
 
 export default function ReverseTree() {
   const data = {
@@ -45,7 +46,11 @@ export default function ReverseTree() {
       {data &&
         open &&
         data.children.map((item) => {
-          return <Tree node={item} children={item.children} />;
+          return (
+            <ul>
+              <Tree node={item} children={item.children} />
+            </ul>
+          );
         })}
     </div>
   );
