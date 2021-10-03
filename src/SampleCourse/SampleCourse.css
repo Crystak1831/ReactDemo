@@ -1,0 +1,92 @@
+.SampleCourse {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100%;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.skill-container__addition *,
+.skill-container__list * {
+  box-sizing: border-box;
+}
+.skill-container__list {
+  overflow: scroll;
+}
+.skill-container,
+.content-container {
+  height: 500px;
+  background: lightgray;
+  border: 0.5px black solid;
+  border-radius: 5px;
+}
+
+.sample-header {
+  background: black;
+  color: white;
+  padding: 5px 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.content-container {
+  margin-left: 5px;
+  flex-grow: 2;
+}
+.empty-placeholder {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input,
+button,
+li {
+  background: white;
+  display: block;
+  width: 96%;
+  border: 0.5px black solid;
+  border-radius: 5px;
+  margin: 2%;
+  padding: 2%;
+  text-align: left;
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button {
+  background: lightseagreen;
+}
+video {
+  width: 90%;
+  max-height: 80%;
+}
+.play-button {
+  width: 20px;
+  height: 20px;
+  border: solid;
+  border-width: 20px;
+  border-color: #202020;
+  border-width: 10px 0px 10px 10px;
+  border-color: transparent transparent transparent black;
+}
+.error-message {
+  color: red;
+  font-size: smaller;
+}
