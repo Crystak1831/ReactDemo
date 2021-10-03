@@ -35,7 +35,7 @@ export default function App() {
       {/* <ImgComponent /> */}
       {/* <LoginPage /> */}
       {/* <SortTable /> */}
-      {/* <RevertTree /> */}
+      <RevertTree />
       {/* <Navigation /> */}
       {/* <EnterUserDetail/> */}
       {/* <Comment /> */}

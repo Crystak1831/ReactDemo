@@ -24,65 +24,65 @@ export default function ReverseTree() {
 
   const [open, setOpen] = useState(false);
   const [rootData, setRootData] = useState("");
-  const init = (data, index) => {
-    data.id = index ? index + "" : "";
-    if (data.children) {
-      data.children.forEach((item, index) => {
-        init(item, data.id + index);
-      });
-    }
-  };
-  init(data, 0);
+  // const init = (data, index) => {
+  //   data.id = index ? index + "" : "";
+  //   if (data.children) {
+  //     data.children.forEach((item, index) => {
+  //       init(item, data.id + index);
+  //     });
+  //   }
+  // };
+  // init(data, 0);
 
-  const handleData = (e) => {
-    const id = e.target.id;
-    console.log(id);
-    if (id !== undefined) {
-      let newData = id.split("").reduce((prev, curr) => {
-        return prev.children[curr];
-      }, data);
-      setRootData(newData);
-      setOpen(!open);
-    }
+  const handleData = () => {
+    setOpen(!open);
   };
 
   return (
     <div data-id={data.id}>
-      <span onClick={handleData}>{open ? "-" : "+"}</span>
-      {/* {data.val} */}
+      {data.children && <span onClick={handleData}>{open ? "-" : "+"}</span>}
       {data.val}
-      <Tree rootData={rootData} />
+      {data &&
+        open &&
+        data.children.map((item) => {
+          return <Tree node={item} children={item.children} />;
+        })}
     </div>
   );
 }
 
-const Tree = ({ rootData }) => {
-  // console.log(rootData)
+const Tree = ({ node }) => {
+  console.log(node);
   const [open, setOpen] = useState(false);
-  const handleData = () => {
+  const handleSpan = () => {
     setOpen(!open);
   };
-  return (
-    <ul>
-      {rootData &&
-        rootData.children.map((item, index) => {
-          // console.log(item)
-          return (
-            <div key={index}>
-              <span onClick={handleData}>{open ? "-" : "+"}</span>
-              {item.val}
 
-              {
-                // console.log(item.children)
-                item.children && <Tree data={item.children} />
-              }
-            </div>
-          );
-        })}
-      {/* {rootData&&rootData.children.map((item)=>{
-          // console.log(item.children)
-          return <Node nodeData={item.children}/>
-        })} */}
-    </ul>
+  const TreeNode = () => {
+    if (node.children) {
+      //  <span>h</span>
+      if (open) {
+        return node.children.map((item) => (
+          <Tree node={item} children={item.children} />
+        ));
+      }
+    }
+  };
+
+  return (
+    <li>
+      {node.children && <span onClick={handleSpan}>{open ? "-" : "+"}</span>}
+      {node.val}
+      <ul>{TreeNode()}</ul>
+    </li>
   );
 };
+
+// css:
+// ul {
+//   list-style: none;
+// }
+
+// .icon {
+//   cursor: pointer;
+// }
