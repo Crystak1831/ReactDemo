@@ -33,18 +33,15 @@ export default function FormValidation() {
         <input type="text" onChange={(e) => onChange(e)} value={formValue} />
         <button onClick={handleSubmit}>onSubmit</button>
         {/* {show ? formValue : ""} */}
-        {inputLsit.length > 0 &&
-          inputLsit.map((item, index) => {
-            return (
-              <div style={{ listStyle: "none" }} key={index}>
-                <li>
-                  {item}
-                  {/* {item} */}
-                </li>
-              </div>
-            );
-          })}
       </form>
+      {inputLsit.length > 0 &&
+        inputLsit.map((item, index) => {
+          return (
+            <div key={index}>
+              <li>{item}</li>
+            </div>
+          );
+        })}
     </div>
   );
 }

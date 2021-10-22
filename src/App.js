@@ -17,7 +17,7 @@ import RevertTree from "./RevertTree/RevertTree";
 import Navigation from "./Navigation/Navigation";
 import EnterUserDetail from "./EnterUserDetail/EnterUserDetail";
 import Comment from "./Comment/Comment";
-import SampleCourse from "./SampleCourse/SampleCourse";
+// import SampleCourse from "./SampleCourse/SampleCourse";
 import TreeView from "./TreeView/TreeView";
 import FormValidation from "./FormValidation/FormValidation";
 
