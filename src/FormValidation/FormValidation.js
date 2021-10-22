@@ -16,12 +16,14 @@ export default function FormValidation() {
   const handleSubmit = (e) => {
     console.log(formValue);
     // alert(formValue)
-    const newItem = {
-      name: formValue
-    };
+    // const newItem = {
+    //   name: formValue
+    // };
     // setShow(!show);
-    console.log(newItem);
-    setInputList(newItem);
+    // console.log(newItem);fd
+    setInputList([...inputLsit, formValue]);
+    setFormValue("");
+    console.log(inputLsit);
   };
 
   return (
@@ -32,12 +34,12 @@ export default function FormValidation() {
         <button onClick={handleSubmit}>onSubmit</button>
         {/* {show ? formValue : ""} */}
         {inputLsit.length > 0 &&
-          inputLsit.map((item) => {
+          inputLsit.map((item, index) => {
             return (
-              <div>
+              <div style={{ listStyle: "none" }} key={index}>
                 <li>
-                  {/* {{item}} */}
-                  hello
+                  {item}
+                  {/* {item} */}
                 </li>
               </div>
             );
