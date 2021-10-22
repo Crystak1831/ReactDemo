@@ -19,6 +19,7 @@ import EnterUserDetail from "./EnterUserDetail/EnterUserDetail";
 import Comment from "./Comment/Comment";
 import SampleCourse from "./SampleCourse/SampleCourse";
 import TreeView from "./TreeView/TreeView";
+import FormValidation from "./FormValidation/FormValidation";
 
 export default function App() {
   return (
@@ -43,6 +44,7 @@ export default function App() {
       {/* <SampleCourse/> */}
       {/* <TreeView /> */}
       {/* <Todo /> */}
+      <FormValidation />
     </div>
   );
 }
