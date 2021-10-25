@@ -1,0 +1,13 @@
+.form-control {
+  /* background-color: red; */
+  margin-bottom: 1rem;
+}
+
+.invalid input {
+  background-color: pink;
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+}
